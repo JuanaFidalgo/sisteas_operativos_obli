@@ -27,4 +27,21 @@ menu_sesion(){
     done
 }
 
-menu_sesion
+menu_principal(){
+    while true; do 
+        echo "----- MENÚ PRINCIPAL -----"
+        echo "4. Agregar dron"
+        echo "5. Asignar dron a reparto"
+        echo "6. Actualizar dron"
+        echo "7. Reporte de estado de flota dron"
+        echo "8. Salir
+        
+    read -r OPCION
+
+        case "$OPCION" in
+            1) ingresar_dron ;;
+            2) return ;;
+            *) echo "Opción incorrecta" ;;
+        esac
+    done"
+}
